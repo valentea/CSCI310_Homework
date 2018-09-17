@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="1" hostname="Alexs-MacBook-Air.local" id="0" name="FooTest" package="" skipped="0" tests="3" time="0.306" timestamp="2018-09-17T01:08:05">
+      <properties>
+          <property name="gopherProxySet" value="false" />
+
+          <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+
+          <property name="ant.library.dir" value="/Users/alex/apache-ant-1.10.5/lib" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="java.specification.version" value="10" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="ant.project.name" value="Project1" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="java.class.path" value="/Users/alex/Desktop/CSCI310_Homework/Project1/bin:/Users/alex/Desktop/Project1/lib/junit-4.10.jar:/Users/alex/apache-ant-1.10.5/lib/ant-launcher.jar:/Users/alex/apache-ant-1.10.5/lib/ant.jar:/Users/alex/apache-ant-1.10.5/lib/ant-junit.jar:/Users/alex/apache-ant-1.10.5/lib/ant-junit4.jar" />
+
+          <property name="java.vm.vendor" value="&quot;Oracle Corporation&quot;" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="source.dir" value="/Users/alex/Desktop/CSCI310_Homework/Project1/src" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="ant.file.type.Project1" value="file" />
+
+          <property name="java.vm.specification.version" value="10" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="user.country" value="US" />
+
+          <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner FooTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/alex/Desktop/CSCI310_Homework/Project1/bin/test-reports/TEST-FooTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/Users/alex/Desktop/CSCI310_Homework/Project1/bin/test-reports/TEST-FooTest.txt crashfile=/Users/alex/Desktop/CSCI310_Homework/Project1/junitvmwatcher14752694255866972352.properties propsfile=/Users/alex/Desktop/CSCI310_Homework/Project1/junit5450802592289472258.properties" />
+
+          <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="jdk.debug" value="release" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="test.dir" value="/Users/alex/Desktop/CSCI310_Homework/Project1/test" />
+
+          <property name="user.home" value="/Users/alex" />
+
+          <property name="user.language" value="en" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="java.version.date" value="2018-04-17" />
+
+          <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home" />
+
+          <property name="basedir" value="/Users/alex/Desktop/CSCI310_Homework/Project1" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.vm.compressedOopsMode" value="Zero based" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="ant.java.version" value="10" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="doc.dir" value="/Users/alex/Desktop/CSCI310_Homework/Project1/doc" />
+
+          <property name="ant.file.Project1" value="/Users/alex/Desktop/CSCI310_Homework/Project1/build.xml" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="java.runtime.version" value="10.0.1+10" />
+
+          <property name="user.name" value="alex" />
+
+          <property name="ant.file" value="/Users/alex/Desktop/CSCI310_Homework/Project1/build.xml" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="os.version" value="10.13.6" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="ant.project.invoked-targets" value="test" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="java.vendor.version" value="18.3" />
+
+          <property name="report.dir" value="/Users/alex/Desktop/CSCI310_Homework/Project1/bin/test-reports" />
+
+          <property name="ant.core.lib" value="/Users/alex/apache-ant-1.10.5/lib/ant.jar" />
+
+          <property name="build.dir" value="/Users/alex/Desktop/CSCI310_Homework/Project1/bin" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/" />
+
+          <property name="java.io.tmpdir" value="/var/folders/0d/sx01m84n4hv1g3nh8gwg_7640000gn/T/" />
+
+          <property name="java.version" value="10.0.1" />
+
+          <property name="user.dir" value="/Users/alex/Desktop/CSCI310_Homework/Project1" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+
+          <property name="ant.home" value="/Users/alex/apache-ant-1.10.5" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.10.5 compiled on July 10 2018" />
+
+          <property name="java.library.path" value="/Users/alex/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="java.vm.version" value="10.0.1+10" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+
+          <property name="java.class.version" value="54.0" />
+
+          <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="ant.project.default-target" value="compile" />
+
+      </properties>
+
+      <testcase classname="FooTest" name="addConnectionTest" time="0.004" />
+
+      <testcase classname="FooTest" name="settersAndGettersAirportClass" time="0.018">
+          <failure message="expected:&lt;3&gt; but was:&lt;2&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;3&gt; but was:&lt;2&gt;
+	at FooTest.settersAndGettersAirportClass(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+</failure>
+
+      </testcase>
+
+      <testcase classname="FooTest" name="readFileTest" time="0.004" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[Exception occurred trying to read 'DNE'.java.io.FileNotFoundException: DNE (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:220)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:113)
+	at java.base/java.io.FileReader.<init>(FileReader.java:58)
+	at Main.readFile(Unknown Source)
+	at FooTest.readFileTest(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+]]></system-err>
+
+  </testsuite>
+</testsuites>
