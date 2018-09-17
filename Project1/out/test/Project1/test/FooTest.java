@@ -42,6 +42,7 @@ public class FooTest {
         testConnectionList.add(new Pair<>(100, testConnectionAirport2));
         testWithNoName.setConnectedAirports(testConnectionList);
 
+        assertEquals(testConnectionList, testWithNoName.getConnectedAirports());
         assertEquals(2, testWithNoName.getConnectedAirports().size());
 
 

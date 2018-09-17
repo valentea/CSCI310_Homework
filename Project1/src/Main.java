@@ -46,7 +46,13 @@ public class Main {
             startAP.addNewConnection(priceInt, endAP);   //MAKE A CONNECTION BETWEEN START AND END POINT USING PRICE
         }
 
+        BreadthFirstSearch testedBFS = new BreadthFirstSearch(origin, map.values());
+        testedBFS.compute();
+        for (Airport temp : map.values()) {
+            System.out.println(temp.getPath() + " " + temp.getAirportName() + " " + temp.getPriceFromOrigan());
+        }
     }
+
 
     //FN TO OPEN AND READ FILE ONCE AND PUT IT INTO A LIST OF STRINGS LINE BY LINE
     static List<String> readFile(String filename) {

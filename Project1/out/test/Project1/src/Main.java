@@ -1,3 +1,5 @@
+import javafx.util.Pair;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -5,6 +7,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
 
@@ -42,11 +45,14 @@ public class Main {
 
             startAP.addNewConnection(priceInt, endAP);   //MAKE A CONNECTION BETWEEN START AND END POINT USING PRICE
         }
-//        for (Airport airportTest: map.values()) {
-//            System.out.println(airportTest.getAirportName());
-//
-//        }
+
+        BreadthFirstSearch testedBFS = new BreadthFirstSearch(origin, map.values());
+        testedBFS.compute();
+        for (Airport temp : map.values()) {
+            System.out.println(temp.getPath() + " " + temp.getAirportName() + " " + temp.getPriceFromOrigan());
+        }
     }
+
 
     //FN TO OPEN AND READ FILE ONCE AND PUT IT INTO A LIST OF STRINGS LINE BY LINE
     static List<String> readFile(String filename) {

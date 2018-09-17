@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="1" hostname="Alexs-MacBook-Air.local" name="FooTest" skipped="0" tests="3" time="0.306" timestamp="2018-09-17T01:08:05">
+<testsuite errors="0" failures="0" hostname="Alexs-MacBook-Air.local" name="FooTest" skipped="0" tests="3" time="0.407" timestamp="2018-09-17T17:15:10">
   <properties>
     <property name="gopherProxySet" value="false" />
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
@@ -22,7 +22,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD" />
     <property name="user.country" value="US" />
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner FooTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/alex/Desktop/CSCI310_Homework/Project1/bin/test-reports/TEST-FooTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/Users/alex/Desktop/CSCI310_Homework/Project1/bin/test-reports/TEST-FooTest.txt crashfile=/Users/alex/Desktop/CSCI310_Homework/Project1/junitvmwatcher14752694255866972352.properties propsfile=/Users/alex/Desktop/CSCI310_Homework/Project1/junit5450802592289472258.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner FooTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/alex/Desktop/CSCI310_Homework/Project1/bin/test-reports/TEST-FooTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/Users/alex/Desktop/CSCI310_Homework/Project1/bin/test-reports/TEST-FooTest.txt crashfile=/Users/alex/Desktop/CSCI310_Homework/Project1/junitvmwatcher6825506630789474545.properties propsfile=/Users/alex/Desktop/CSCI310_Homework/Project1/junit10130485169070113981.properties" />
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="jdk.debug" value="release" />
     <property name="sun.cpu.endian" value="little" />
@@ -76,16 +76,9 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="ant.project.default-target" value="compile" />
   </properties>
-  <testcase classname="FooTest" name="addConnectionTest" time="0.004" />
-  <testcase classname="FooTest" name="settersAndGettersAirportClass" time="0.018">
-    <failure message="expected:&lt;3&gt; but was:&lt;2&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;3&gt; but was:&lt;2&gt;
-	at FooTest.settersAndGettersAirportClass(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-</failure>
-  </testcase>
-  <testcase classname="FooTest" name="readFileTest" time="0.004" />
+  <testcase classname="FooTest" name="readFileTest" time="0.007" />
+  <testcase classname="FooTest" name="addConnectionTest" time="0.002" />
+  <testcase classname="FooTest" name="settersAndGettersAirportClass" time="0.007" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[Exception occurred trying to read 'DNE'.java.io.FileNotFoundException: DNE (No such file or directory)
 	at java.base/java.io.FileInputStream.open0(Native Method)

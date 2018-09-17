@@ -1,5 +1,5 @@
 Testsuite: FooTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.309 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.407 sec
 ------------- Standard Error -----------------
 Exception occurred trying to read 'DNE'.java.io.FileNotFoundException: DNE (No such file or directory)
 	at java.base/java.io.FileInputStream.open0(Native Method)
@@ -32,6 +32,6 @@ Exception occurred trying to read 'DNE'.java.io.FileNotFoundException: DNE (No s
 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
 ------------- ---------------- ---------------
 
-Testcase: addConnectionTest took 0.007 sec
-Testcase: settersAndGettersAirportClass took 0.001 sec
-Testcase: readFileTest took 0.008 sec
+Testcase: readFileTest took 0.01 sec
+Testcase: addConnectionTest took 0.002 sec
+Testcase: settersAndGettersAirportClass took 0.007 sec
