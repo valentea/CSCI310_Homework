@@ -3,23 +3,23 @@ import javafx.util.Pair;
 import java.util.*;
 
 public class BreadthFirstSearch {
-    private Airport origan;
-    private Collection<Airport> map;
+    private FlightMap origan;
+    private Collection<FlightMap> map;
 
-    public BreadthFirstSearch(Airport start, Collection<Airport> map){
+    public BreadthFirstSearch(FlightMap start, Collection<FlightMap> map){
         this.origan = start;
         this.map = map;
     }
 
     public void compute() {
 
-        Queue<Airport> queue = new LinkedList<>();
-        ArrayList<Airport> explored = new ArrayList<>();
+        Queue<FlightMap> queue = new LinkedList<>();
+        ArrayList<FlightMap> explored = new ArrayList<>();
         queue.add(this.origan);
 
         while (!queue.isEmpty()) {
-            Airport current = queue.remove();
-            for (Pair<Integer, Airport> goal : current.getConnectedAirports()) {
+            FlightMap current = queue.remove();
+            for (Pair<Integer, FlightMap> goal : current.getConnectedAirports()) {
                 if(!explored.contains(goal.getValue())) {
                     if(!current.equals(origan)) {
                         List<String> compPath = new ArrayList<>(current.getPath());

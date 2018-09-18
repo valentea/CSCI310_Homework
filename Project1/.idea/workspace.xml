@@ -62,7 +62,7 @@
       <change beforePath="$PROJECT_DIR$/out/test/Project1/test/FooTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/Project1/test/testInput.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/Project1/testInput.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Airport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlightMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BreadthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BreadthFirstSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/FooTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/FooTest.java" afterDir="false" />
@@ -81,11 +81,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SearchMap.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SearchMap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SearchMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+            <state relative-caret-position="-207">
+              <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2228#2236#0" expanded="true" />
@@ -111,11 +111,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="Airport.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Airport.java">
+      <file leaf-file-name="FlightMap.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/FlightMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+            <state relative-caret-position="510">
+              <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#setConnectedAirports#0;class#Airport#0" />
@@ -177,6 +177,7 @@
         <option value="$PROJECT_DIR$/src/BreadthFirstSearch.java" />
         <option value="$PROJECT_DIR$/test/FooTest.java" />
         <option value="$PROJECT_DIR$/src/SearchMap.java" />
+        <option value="$PROJECT_DIR$/src/FlightMap.java" />
       </list>
     </option>
   </component>
@@ -298,7 +299,7 @@
       <workItem from="1536711505009" duration="1055000" />
       <workItem from="1536775254965" duration="437000" />
       <workItem from="1536776101840" duration="45000" />
-      <workItem from="1537130507177" duration="19539000" />
+      <workItem from="1537130507177" duration="19822000" />
     </task>
     <task id="LOCAL-00001" summary="First Push to Git">
       <created>1536711620982</created>
@@ -380,11 +381,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21076000" />
+    <option name="totallyTimeSpent" value="21359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -395,13 +395,13 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24022347" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24022347" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32976446" />
       <window_info anchor="right" id="Coverage" sideWeight="0.50208336" side_tool="true" visible="true" weight="0.07320644" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32960895" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17057101" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17057101" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -491,7 +491,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Airport.java">
+    <entry file="file://$PROJECT_DIR$/src/FlightMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
@@ -509,7 +509,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Airport.java">
+    <entry file="file://$PROJECT_DIR$/src/FlightMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
@@ -527,7 +527,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Airport.java">
+    <entry file="file://$PROJECT_DIR$/src/FlightMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
@@ -543,17 +543,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/input/input.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Airport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setConnectedAirports#0;class#Airport#0" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -584,11 +573,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SearchMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+        <state relative-caret-position="-207">
+          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2228#2236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FlightMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setConnectedAirports#0;class#Airport#0" />
           </folding>
         </state>
       </provider>

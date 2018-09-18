@@ -1,22 +1,20 @@
 import javafx.util.Pair;
 
-import javax.imageio.metadata.IIOMetadataNode;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.*;
 
-public class Airport {
+public class FlightMap {
     private String airportName;
-    private List<Pair<Integer, Airport>> connectedAirports = new ArrayList<>(); //ALWAYS INITIALIZE CONNECTION LIST AS EMPTY.
+    private List<Pair<Integer, FlightMap>> connectedAirports = new ArrayList<>(); //ALWAYS INITIALIZE CONNECTION LIST AS EMPTY.
     private int priceFromOrigan;
     private List<String> path = new ArrayList<>();
 
     //CONSTRUCTORS
-    public Airport(String name){ //CONSTRUCT NEW AIRPORT WITH ONLY NAME
+    public FlightMap(String name){ //CONSTRUCT NEW AIRPORT WITH ONLY NAME
         this.airportName = name;
     }
     //DEFAULT CONSTRUCTOR
-    public Airport() {}
+    public FlightMap() {}
 
     //SETTERS AND GETTERS
     public String getAirportName() {
@@ -25,10 +23,10 @@ public class Airport {
     public void setAirportName(String airportName) {
         this.airportName = airportName;
     }
-    public List<Pair<Integer, Airport>> getConnectedAirports() {
+    public List<Pair<Integer, FlightMap>> getConnectedAirports() {
         return connectedAirports;
     }
-    public void setConnectedAirports(List<Pair<Integer, Airport>> connectedAirports) {
+    public void setConnectedAirports(List<Pair<Integer, FlightMap>> connectedAirports) {
         this.connectedAirports = connectedAirports;
     }
     public int getPriceFromOrigan() {
@@ -45,8 +43,8 @@ public class Airport {
     }
 
     //ADD NEW CONNECTION
-    public void addNewConnection(Integer price, Airport connectingAirport){
-        this.connectedAirports.add(new Pair<>(price, connectingAirport));
+    public void addNewConnection(Integer price, FlightMap connectingFlightMap){
+        this.connectedAirports.add(new Pair<>(price, connectingFlightMap));
     }
 
     public void addToPath(List<String> temp){

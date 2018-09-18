@@ -16,30 +16,30 @@ public class FooTest {
 
     @Test
     public void addConnectionTest(){
-        Airport testAirport = new Airport("test1"); //CREATE NEW AIRPORT
+        FlightMap testFlightMap = new FlightMap("test1"); //CREATE NEW AIRPORT
 
-        assertEquals("test1", testAirport.getAirportName());  //TEST getName FN OF AIRPORT CLASS
-        assertEquals(0, testAirport.getConnectedAirports().size()); //TEST TO MAKE SURE CONNCETIONS IS INISALIZED AND EMPTY ON CONTRUCITON OF NEW AIRPORT CLASS
+        assertEquals("test1", testFlightMap.getAirportName());  //TEST getName FN OF AIRPORT CLASS
+        assertEquals(0, testFlightMap.getConnectedAirports().size()); //TEST TO MAKE SURE CONNCETIONS IS INISALIZED AND EMPTY ON CONTRUCITON OF NEW AIRPORT CLASS
 
-        Airport testConnect = new Airport("connectTest");  //CREATE A NEW AIRPORT TO TEST ADD CONNECTION
-        testAirport.addNewConnection(200, testConnect);
-        assertEquals(1, testAirport.getConnectedAirports().size()); //SEE IF SIZE OF AIRPORT CONCECCTION GREW BY ONE
-        Pair<Integer, Airport> testPair = new Pair<>(200, testConnect);
-        assertEquals(testPair, testAirport.getConnectedAirports().get(0));  //SEE IF GET CONNECECTION RETRUNS THE CORRECT PAIR OF AIPORT AND PRICE
+        FlightMap testConnect = new FlightMap("connectTest");  //CREATE A NEW AIRPORT TO TEST ADD CONNECTION
+        testFlightMap.addNewConnection(200, testConnect);
+        assertEquals(1, testFlightMap.getConnectedAirports().size()); //SEE IF SIZE OF AIRPORT CONCECCTION GREW BY ONE
+        Pair<Integer, FlightMap> testPair = new Pair<>(200, testConnect);
+        assertEquals(testPair, testFlightMap.getConnectedAirports().get(0));  //SEE IF GET CONNECECTION RETRUNS THE CORRECT PAIR OF AIPORT AND PRICE
     }
 
     @Test
     public void settersAndGettersAirportClass() {
-        Airport testWithNoName = new Airport();
+        FlightMap testWithNoName = new FlightMap();
         testWithNoName.setAirportName("test1");
 
         assertEquals("test1", testWithNoName.getAirportName());
 
-        Airport testConnectionAirport1 = new Airport("testConnect1");
-        Airport testConnectionAirport2 = new Airport("testConnect2");
-        List<Pair<Integer, Airport>> testConnectionList = new ArrayList<>();
-        testConnectionList.add(new Pair<>(100, testConnectionAirport1));
-        testConnectionList.add(new Pair<>(100, testConnectionAirport2));
+        FlightMap testConnectionFlightMap1 = new FlightMap("testConnect1");
+        FlightMap testConnectionFlightMap2 = new FlightMap("testConnect2");
+        List<Pair<Integer, FlightMap>> testConnectionList = new ArrayList<>();
+        testConnectionList.add(new Pair<>(100, testConnectionFlightMap1));
+        testConnectionList.add(new Pair<>(100, testConnectionFlightMap2));
         testWithNoName.setConnectedAirports(testConnectionList);
 
         assertEquals(testConnectionList, testWithNoName.getConnectedAirports());
