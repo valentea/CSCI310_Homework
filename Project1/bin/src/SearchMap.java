@@ -9,9 +9,9 @@ import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
 
-public class Main {
+public class SearchMap {
 
-    public static void main(String[] args) {
+    public static void searchMap(String[] args) {
         List<String> test = readFile("input/input.txt");  //MAKE THE INPUT FILE A LIST OF LINES
 
         Hashtable<String, Airport> map = new Hashtable<>();  //USE A HASHTABLE FOR QUICK LOOKUP OF AirpORTS
