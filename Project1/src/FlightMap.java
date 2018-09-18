@@ -47,14 +47,11 @@ public class FlightMap {
         this.connectedAirports.add(new Pair<>(price, connectingFlightMap));
     }
 
+    //ADD A LIST OF STRINGS (THE NAMES OF ALL THE PRECEEDING AIRPORTS)
+        //ONLY USED IN THE BFS CLASS AND THEREFOR WE ALWAYS PUT IN THE ENTIRE LIST (PATH) OF THE AIRPORT BEFORE IT
     public void addToPath(List<String> temp){
         for(String portPath : temp){
             this.path.add(portPath);
         }
-    }
-
-    public int priceTo(int price){
-        this.priceFromOrigan = price;
-        return price;
     }
 }

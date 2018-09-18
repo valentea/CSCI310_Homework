@@ -3,17 +3,10 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
-import static org.junit.Assert.*;
 
+import static org.junit.Assert.assertEquals;
 
-public class FooTest {
-    @Test
-    public void readFileTest(){
-        List<String> outPut = SearchMap.readFile("test/testInput.txt");
-        assertEquals(11, outPut.size());
-        assertNull(SearchMap.readFile("DNE"));
-    }
-
+public class TestFlightMap {
     @Test
     public void addConnectionTest(){
         FlightMap testFlightMap = new FlightMap("test1"); //CREATE NEW AIRPORT

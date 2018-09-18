@@ -7,7 +7,7 @@ import java.util.List;
 public class SearchMap {
 
     public static void main(String[] args) {
-        List<String> test = readFile("../input/" + args[0]);  //MAKE THE INPUT FILE A LIST OF LINES
+        List<String> test = readFile("input/" + args[0]);  //MAKE THE INPUT FILE A LIST OF LINES
 
         Hashtable<String, FlightMap> map = new Hashtable<>();  //USE A HASHTABLE FOR QUICK LOOKUP OF AirpORTS
 
@@ -41,8 +41,13 @@ public class SearchMap {
             startAP.addNewConnection(priceInt, endAP);   //MAKE A CONNECTION BETWEEN START AND END POINT USING PRICE
         }
 
+        //RUN BFS TO FIND ALL CONNECTIONS. IN FN EACH AIRPORT GETS UPDATED WITH PATH TO ORIGIN
+        //INIT THE BFS
         BreadthFirstSearch testedBFS = new BreadthFirstSearch(origin, map.values());
+        //ACTUALLY CALCULATE THE PATHS
         testedBFS.compute();
+
+
         for (FlightMap temp : map.values()) {
             System.out.println(temp.getPath() + " " + temp.getAirportName() + " " + temp.getPriceFromOrigan());
         }
