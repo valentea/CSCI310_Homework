@@ -11,6 +11,19 @@ public class BreadthFirstSearch {
         this.map = map;
     }
 
+    public FlightMap getOrigan() {
+        return origan;
+    }
+    public void setOrigan(FlightMap origan) {
+        this.origan = origan;
+    }
+    public Collection<FlightMap> getMap() {
+        return map;
+    }
+    public void setMap(Collection<FlightMap> map) {
+        this.map = map;
+    }
+
     public void compute() {
 
         Queue<FlightMap> queue = new LinkedList<>();

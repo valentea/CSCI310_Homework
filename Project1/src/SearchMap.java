@@ -1,5 +1,7 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
+import javafx.util.Pair;
+
+import javax.imageio.IIOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
@@ -7,7 +9,7 @@ import java.util.List;
 public class SearchMap {
 
     public static void main(String[] args) {
-        List<String> test = readFile("input/" + args[0]);  //MAKE THE INPUT FILE A LIST OF LINES
+        List<String> test = readFile("../input/" + args[0]);  //MAKE THE INPUT FILE A LIST OF LINES
 
         Hashtable<String, FlightMap> map = new Hashtable<>();  //USE A HASHTABLE FOR QUICK LOOKUP OF AirpORTS
 
@@ -47,10 +49,8 @@ public class SearchMap {
         //ACTUALLY CALCULATE THE PATHS
         testedBFS.compute();
 
-
-        for (FlightMap temp : map.values()) {
-            System.out.println(temp.getPath() + " " + temp.getAirportName() + " " + temp.getPriceFromOrigan());
-        }
+        //WRITE TO OUTPUT FILE
+        writeToOutputFile(args[1], map);
     }
 
 
@@ -70,6 +70,25 @@ public class SearchMap {
             System.err.format("Exception occurred trying to read '%s'.", filename);
             e.printStackTrace();
             return null;
+        }
+    }
+
+    static void writeToOutputFile(String outFilename, Hashtable<String, FlightMap> map) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(outFilename));
+            writer.write("Destination       Flight Route from P        Total Cost\n");
+            for (FlightMap temp : map.values()) {
+                if (temp.getPath().size() != 0) {
+                    writer.write(temp.getAirportName() + "                 ");
+                    for (String pathIterationName : temp.getPath()) {
+                        writer.write(pathIterationName + ", ");
+                    }
+                    writer.write(temp.getAirportName() + "                     " + temp.getPriceFromOrigan() + "\n");
+                }
+            }
+            writer.close();
+        }catch (IOException IOE){
+            IOE.printStackTrace();
         }
     }
 }

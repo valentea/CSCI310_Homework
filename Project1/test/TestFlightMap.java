@@ -38,7 +38,20 @@ public class TestFlightMap {
         assertEquals(testConnectionList, testWithNoName.getConnectedAirports());
         assertEquals(2, testWithNoName.getConnectedAirports().size());
 
+        testWithNoName.setPriceFromOrigan(300);
+        assertEquals(300, testWithNoName.getPriceFromOrigan());
 
+        List<String> fakeTestPath = new ArrayList<>();
+        fakeTestPath.add("one");
+        fakeTestPath.add("two");
+        fakeTestPath.add("three");
 
+        testWithNoName.setPath(fakeTestPath);
+        assertEquals(3, testWithNoName.getPath().size());
+
+        List<String> fakeAddToPathTest = new ArrayList<>();
+        fakeAddToPathTest.add("four");
+        testWithNoName.addToPath(fakeAddToPathTest);
+        assertEquals(4, testWithNoName.getPath().size());
     }
 }
